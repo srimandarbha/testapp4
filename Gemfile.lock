@@ -12,6 +12,8 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     colorator (0.1)
+    daemons (1.1.9)
+    eventmachine (1.0.3)
     execjs (2.1.0)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
@@ -45,12 +47,20 @@ GEM
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
+    rack (1.5.2)
+    rack-jekyll (0.3.5)
+      jekyll
+      rack
     rb-fsevent (0.9.4)
     rb-inotify (0.9.4)
       ffi (>= 0.5.0)
     redcarpet (3.1.2)
     safe_yaml (1.0.3)
     sass (3.3.8)
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
     timers (1.1.0)
     toml (0.1.1)
       parslet (~> 1.5.0)
@@ -62,3 +72,5 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   jekyll
+  rack-jekyll
+  thin
